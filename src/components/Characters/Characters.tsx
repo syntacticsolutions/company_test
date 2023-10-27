@@ -11,10 +11,10 @@ export const Characters = ({ characters }: CharacterGridProps) => {
     <Container>
       {characters.map(({ image, id, name }) => (
         <div>
-        <figure key={id}>
-          <img src={image} width="200px" />
-        </figure>
-        <p>{name}</p>
+          <figure key={id}>
+            <img src={image} width="200px" />
+          </figure>
+          <p>{name}</p>
         </div>
       ))}
     </Container>
@@ -30,5 +30,4 @@ const Container = styled.section`
   p {
     text-align: center;
   }
-
 `

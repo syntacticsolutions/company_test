@@ -22,8 +22,8 @@ export type Character = {
 }
 
 export type CharacterAction = {
-    type: string;
-    payload: string[];
+  type: string
+  payload: string[]
 }
 
 export enum CharacterActionTypes {
@@ -31,15 +31,17 @@ export enum CharacterActionTypes {
   FETCH_FULFILLED = "characters/fetchFulfilled"
 }
 
-export type FetchResponse = {
-    results: Character[],
-    info: {
-        count: number,
-        pages: number,
-        next?: string,
+export type FetchResponse =
+  | {
+      results: Character[]
+      info: {
+        count: number
+        pages: number
+        next?: string
         prev?: string
+      }
     }
-} | {}
+  | {}
 
 export const fetch = createAction<FetchResponse>(CharacterActionTypes.FETCH)
 
