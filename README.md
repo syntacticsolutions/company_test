@@ -13,7 +13,7 @@
 
   #### 3. Open in Browser
 
-  navigation to `localhost:3000/`
+  navigate to `localhost:3000/`
       
   ## Build for Production ✨  
   ```$ npm run build```
