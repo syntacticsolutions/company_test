@@ -1,6 +1,3 @@
-import { Loader } from "@components/Loader"
-import { Episode } from "@store/episodes/actions"
-import { useEpisodes } from "@store/episodes/hooks"
 import _ from "lodash"
 import React, {
   Dispatch,
@@ -11,6 +8,9 @@ import React, {
   useRef,
   useState
 } from "react"
+import { Loader } from "@components/Loader"
+import { Episode } from "@store/episodes/actions"
+import { useEpisodes } from "@store/episodes/hooks"
 import { Container } from "./styled"
 
 interface EpisodeNavProps {

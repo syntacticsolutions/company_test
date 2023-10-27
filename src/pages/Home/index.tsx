@@ -1,6 +1,5 @@
-import React, { Dispatch, SetStateAction, Suspense, useMemo, useState } from "react"
+import React, {  Suspense, useState } from "react"
 import { useCharacters } from "@store/characters/hooks"
-import { useEpisodes } from "@store/episodes/hooks"
 import { Episode } from "@store/episodes/actions"
 import styled from "styled-components"
 import { EpisodeNav } from "@components/EpisodeNav/EpisodeNav"

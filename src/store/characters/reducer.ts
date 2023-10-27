@@ -1,5 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit"
-import { fetchFulfilled, Character, FetchResponse } from "./actions"
+import { fetchFulfilled, Character } from "./actions"
 
 export const initialState = {
   data: [] as Character[],

@@ -1,5 +1,5 @@
-import { Character } from "@store/characters/actions"
 import React from "react"
+import { Character } from "@store/characters/actions"
 import styled from "styled-components"
 
 export type CharacterGridProps = {

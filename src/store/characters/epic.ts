@@ -6,7 +6,7 @@ import {
   CharacterActionTypes,
   fetchFulfilled
 } from "./actions"
-import { catchError, map, mergeMap, Observable, of, tap } from "rxjs"
+import { catchError, map, mergeMap, Observable, of } from "rxjs"
 
 export const CharactersEpic = (action$: Observable<CharacterAction>) =>
   action$.pipe(

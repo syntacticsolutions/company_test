@@ -2,7 +2,6 @@ import { ajax } from "rxjs/ajax"
 import { ofType } from "redux-observable"
 import { EpisodeAction, Episode, EpisodeActionTypes, fetchFulfilled } from "./actions"
 import { catchError, distinct, map, mergeMap, Observable, of } from "rxjs"
-import { uniq } from "lodash"
 
 export const EpisodesEpic = (action$: Observable<EpisodeAction>) =>
   action$.pipe(
